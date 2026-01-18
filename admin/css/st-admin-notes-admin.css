@@ -1,0 +1,35 @@
+.st-admin-notes-canvas{position:fixed;top:70px;left:20px;right:20px;bottom:20px;pointer-events:none;z-index:9999}
+.st-admin-notes-canvas *{pointer-events:auto}
+.st-notes-dock{pointer-events:auto}
+#st-admin-notes-toggle{pointer-events:auto}
+.st-admin-notes-canvas.is-hidden{display:none}
+.st-note-card{position:absolute !important; box-sizing:border-box;padding:12px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.12);border:1px solid rgba(0,0,0,.08);pointer-events:auto;overflow:hidden;backdrop-filter:blur(2px)}
+.st-note-card__header{display:flex;justify-content:space-between;align-items:center;font-weight:600;margin-bottom:8px;cursor:move;gap:6px}
+.st-note-card__title{font-size:14px;line-height:1.2;flex:1;min-width:0}
+.st-note-card__actions{display:flex;gap:6px}
+.st-note-card__btn{background:transparent;border:1px solid rgba(0,0,0,.15);border-radius:4px;color:#333;font-size:13px;cursor:pointer;line-height:1;padding:4px 6px;transition:background .15s,border-color .15s}
+.st-note-card__btn:hover{background:rgba(0,0,0,.06);border-color:rgba(0,0,0,.2)}
+.st-note-card__body{font-size:13px;line-height:1.5;white-space:pre-wrap;max-height:100%;overflow:auto}
+.st-notes-tray,.st-note-card.is-minimized,.st-note-card.is-minimized .st-note-card__body,.st-note-editor{display:none}
+.stn-color-chip{display:inline-block;width:14px;height:14px;border-radius:50%;vertical-align:middle;border:1px solid rgba(0,0,0,.1);margin-right:6px}
+.stn-actions form{margin:0}
+.stn-modal{position:fixed;inset:0;z-index:10001;display:none}
+.stn-modal.is-open{display:block}
+.stn-modal__backdrop{position:absolute;inset:0;background:rgba(0,0,0,.35);backdrop-filter:blur(2px)}
+.stn-modal__dialog{position:relative;max-width:520px;margin:60px auto;background:#fff;border-radius:8px;box-shadow:0 10px 35px rgba(0,0,0,.2);padding:20px}
+.stn-modal__header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.stn-modal__close{background:transparent;border:none;font-size:20px;cursor:pointer;line-height:1;padding:4px}
+.st-notes-admin-card{background:#fff;border:1px solid #dcdcde;border-radius:8px;padding:18px;box-shadow:0 1px 2px rgba(0,0,0,.06);margin-top:16px}
+.st-notes-admin-card h2{margin-top:0}
+.st-notes-admin-table td,.st-notes-admin-table th{vertical-align:middle;}
+.st-note-card.ui-draggable.ui-resizable.minimized {
+    left: calc(40px + (var(--stack-index) * 267px)) !important;
+    right: auto !important; 
+    top: auto !important;
+    bottom: 0 !important;
+    height: fit-content !important;
+}
+.st-note-card__body.minimized_body {
+    display: none;
+}
+
